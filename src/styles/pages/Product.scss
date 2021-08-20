@@ -1,0 +1,27 @@
+.product {
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 10% 10px 10%;
+
+    &__title {
+      font-size: 2vw;
+    }
+  }
+
+  &__banner {
+    img {
+      width: 100%;
+      max-height: calc(100vh - 64px);
+      object-fit: cover;
+    }
+  }
+
+  &__feed {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+}
